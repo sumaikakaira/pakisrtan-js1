@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final projext</title>
+    <link rel="style.css" href="style.css">
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(40, 137, 108);
+    }
+    .container{
+        border:1px solid #ac2b2b;
+        width:400px;
+        height: 550px;
+        padding: 19px 16px;
+        border-radius: 10px;
+    }
+    .app-title{
+        width: 100%;
+        background-color: #7a6e6e;
+        padding: 10px 5px;
+        color:#22104b;
+
+    }
+.app-title h1{
+    text-align: center;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.app-title p{
+    text-align: center;
+    font-family: cursive;
+}
+.TodoInput{
+    margin-top: 12px;
+}
+.TodoInput input{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid rgb(104, 3, 3);
+    width: 250px;
+    padding: 4px 6px;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #e4d4d4;
+     }
+.TodoInput button:hover{
+    background: none;
+    border: 1px solid #ff0000;
+    color: aliceblue;
+    font-weight: bold;
+}
+.todoListItems{
+    border: 3px solid white;
+    width: 100%;
+    height: 280px;
+    margin-top: 20px;
+    overflow: scroll;
+}
+.myList{
+    color: aqua;
+    padding: 10px 13px;
+}
+.delete-btn{
+    float: right;
+    margin-left: 6px;
+}
+.edit-btn{
+    float: right;
+}
+.delete-btn img{
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+}
+.edit-btn img{
+    width: 23px;
+    height: 26px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+ <!--  <center>
+ <div class="container" >
+    <div class="app-title">
+        <h1 data-aos='zoom-in' data-aos-duration='1000'>ToDo App</h1>
+        <p>'Make your schedule'</p>
+    </div>
+<div class="TodoInput">
+    <input type="text" id="userInput" placeholder="Enter Todo....">
+    <button onClick="deleteAll()">Delete All</button>
+</div>
+<div class="todolistitems">
+    <ul id="mytodolist"></ul>
+</div>
+ </div> 
+ </center>
+</body>
+<script src="todo.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>-->
+<div class="container">
+    <div class="app_title">
+        <h1 data-aos='zoom-in' data-aos-duration="1000">Todo App</h1>
+        <p>'Make your day schedules'</p>
+        <p>--------</p>
+    </div>
+
+    <div class="TodoInput">
+        <input type="text" id="userInput" placeholder="✍️ Enter Todo ...">
+        <button onclick="deleteAll()">Delete All</button>
+    </div>
+
+    <div class="todoListItems">
+        <ul id="mytodoList"></ul>
+    </div>
+
+</div>
+
+</body>
+
+<script src="todo.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
